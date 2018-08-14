@@ -1,21 +1,14 @@
 def turn_count(board)
   counter = 0
 
-  board.each do |turn|
-    if turn.downcase == "x" || turn.downcase == "o"
-      counter += 1
-      puts "#{counter}"
+
+def current_player(board)
+  current_players = ["X", "O"]
+  current_players.each do |current_player|
+    if turn_count % 2 == 0
+      puts "X"
+    else
+      puts "O"
     end
   end
-
-counter
-end
-
-  def current_player(board)
-    num = turn_count(board)
-    if num % 2 == 0
-		puts “x”
-  else
-    puts “o”
-	end
 end
