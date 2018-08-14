@@ -1,10 +1,11 @@
 def turn_count(board)
-	def current_player(board)
-	counter = 8
-		if turn_count % 2
-		    current_player = “X”
-		else “O”
-    end
+	counter = 0
+	board.each do | index |
+
+	if index = “X” || index = “O”
 	counter += 1
+	puts “{counter}”
 	end
+end
+
 end
