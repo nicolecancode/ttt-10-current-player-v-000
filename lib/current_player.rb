@@ -1,8 +1,8 @@
 def turn_count(board)
-  turn = 0
-board.each do |index|
-  if index == "X" || index == "O"
-    turn += 1
+  counter = 0
+board.each do |current_player|
+  if current_player == "X" || current_player == "O"
+    counter += 1
   end
 end
 return turn
@@ -11,9 +11,9 @@ end
 def current_player(board)
   num_turns = turn_count
   if num_turn % 2 == 0
-    player = "X"
+    current_player = "X"
   else
-    player = "O"
+    current_player = "O"
   end
-  return player
+  return current_player
 end
