@@ -1,4 +1,4 @@
-def turn_count(turn)
+def turn_count(board)
   counter = 0
 
   board.each do |turn|
@@ -7,3 +7,15 @@ def turn_count(turn)
       puts "#{counter}"
     end
   end
+
+  counter
+end
+
+  def current_player(board)
+    num = turn_count(board)
+    if num % 2 == 0
+		return “x”
+  else
+    return “o”
+	end
+end
