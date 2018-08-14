@@ -1,4 +1,4 @@
-def turn_count(board)
+def turn_count(turn)
   counter = 0
 
   board.each do |turn|
