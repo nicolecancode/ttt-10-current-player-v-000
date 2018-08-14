@@ -7,4 +7,3 @@ def turn_count(board)
       puts "#{counter}"
     end
   end
-
