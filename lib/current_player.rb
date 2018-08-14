@@ -7,13 +7,3 @@ def turn_count(turn)
       puts "#{counter}"
     end
   end
-
-  counter
-end
-
-  def current_player(board)
-		if turn_count % 2
-		puts “x”
-  else “o”
-	end
-end
