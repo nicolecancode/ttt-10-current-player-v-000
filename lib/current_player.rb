@@ -21,3 +21,4 @@ end
 end
 
 current_player(board)
+end
