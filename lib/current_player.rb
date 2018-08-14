@@ -1,6 +1,6 @@
-def turn_count(board)
-  counter = 0
-board.each do |current_player|
+def turn_count(index)
+  turn = 0
+board.each do |index|
   if current_player == "X" || current_player == "O"
     counter += 1
   end
