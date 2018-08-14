@@ -19,3 +19,5 @@ end
     puts “o”
 	end
 end
+
+current_player(board)
