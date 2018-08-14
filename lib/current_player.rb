@@ -14,9 +14,9 @@ def current_player(board)
   current_players = ["X", "O"]
   current_players.each do |current_player|
     if turn_count % 2 == 0
-      puts "X"
+      return "X"
     else
-      puts "O"
+      return "O"
     end
   end
 end
